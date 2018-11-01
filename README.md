@@ -3,9 +3,9 @@
 
 移植静态文件配置，这个主要是将原项目的静态文件移植出来以便访问。如下，注意括号中第二个参数为移植后的目录，不要和之前的静态文件目录相同就好。
 
-STATIC_ROOT = os.path.join(BASE_DIR, "/var/www/static")
+```STATIC_ROOT = os.path.join(BASE_DIR, "/var/www/static")```
 进行静态文件移植
-python manage.py collectstatic
+        python manage.py collectstatic
 
 django项目下配置文件
 
