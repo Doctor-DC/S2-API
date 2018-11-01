@@ -16,11 +16,8 @@ django项目下配置文件
     chdir = /root/python/work/venv/s2/
     wsgi-file = quickstart/wsgi.py
     master = true
-    processes = 4
-    
-    
-指定静态文件
-
+    processes = 4   
+    #指定静态文件
     static-map=/static=/root/python/work/venv/s2/static/ 
 
 
