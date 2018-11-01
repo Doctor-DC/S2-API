@@ -6,14 +6,13 @@
 STATIC_ROOT = os.path.join(BASE_DIR, "/var/www/static")
 进行静态文件移植
 python manage.py collectstatic
-
 django项目下配置文件
-[uwsgi]
-http = 0.0.0.0:8000
-chdir = /root/python/work/venv/s2/
-wsgi-file = quickstart/wsgi.py
-master = true
-processes = 4
+    [uwsgi]
+    http = 0.0.0.0:8000
+    chdir = /root/python/work/venv/s2/
+    wsgi-file = quickstart/wsgi.py
+    master = true
+    processes = 4
 
 static-map=/static=/root/python/work/venv/s2/static/ 指定静态文件
 
