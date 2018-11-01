@@ -33,7 +33,7 @@ django项目下配置文件
     
     deactivate
 
-启动：   uwsgi --ini uwsgi.ini 
-停止：uwsgi --stop uwsgi.pid 
-重启：uwsgi --reload uwsgi.pid 
-强制停止：killall -9 uwsgi 
+启动：   `uwsgi --ini uwsgi.ini `
+停止：`uwsgi --stop uwsgi.pid `
+重启：`uwsgi --reload uwsgi.pid `
+强制停止：`killall -9 uwsgi `
