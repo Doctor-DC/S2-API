@@ -36,3 +36,6 @@ django项目下配置文件
 停止：`uwsgi --stop uwsgi.pid `  
 重启：`uwsgi --reload uwsgi.pid `  
 强制停止：`killall -9 uwsgi `  
+
+参考  
+(https://www.cnblogs.com/zhming26/p/6163952.html?utm_source=itdadao&utm_medium=referral)
