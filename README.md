@@ -38,8 +38,8 @@ django项目下配置文件
 强制停止：`killall -9 uwsgi `  
 
 查看端口调用  
-        netstat -lnp|grep 8001
-杀掉进程  
+        netstat -lnp|grep 8001  
+杀掉进程    
          kill -9 进程号
 参考  
 (https://www.cnblogs.com/zhming26/p/6163952.html?utm_source=itdadao&utm_medium=referral)
