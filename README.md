@@ -39,7 +39,7 @@ django项目下配置文件
 
 查看端口调用  
         `netstat -lnp|grep 8001`  
-        `ps 进程号`
+        `ps 进程号`    
 杀掉进程    
          `kill -9 进程号`  
          
