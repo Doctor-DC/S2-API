@@ -44,4 +44,45 @@ django项目下配置文件
          `kill -9 进程号`  
          
 参考  
-(https://www.cnblogs.com/zhming26/p/6163952.html?utm_source=itdadao&utm_medium=referral)
+(https://www.cnblogs.com/zhming26/p/6163952.html?utm_source=itdadao&utm_medium=referral)    
+
+
+
+
+# django 部署docker (无uwsgi)  
+
+  Dockerfile 
+
+        FROM python:3.6.5
+        RUN mkdir /s2run
+        WORKDIR /s2run
+        COPY . /s2run
+        RUN pip install --upgrade pip && \     
+        pip install -r requirements.txt 
+
+        # CMD ["/bin/bash","run.sh"]
+        # RUN pip install  -i  https://pypi.python.org/simple/  -r requirements.txt  
+   
+   docker-compose.yam
+   
+        django:
+        container_name: django
+        image: dctest:latest
+        # build: .
+         command: python manage.py runserver 0.0.0.0:8000
+         # command: uwsgi --ini uwsgi.ini
+         ports:
+        - "8000:8000"
+         volumes:
+         - .:/code
+     
+   
+   运行 创建容器  
+        
+        docker run -i -t dctest:latest
+
+   启动容器  
+   
+        docker-compose up
+        
+ 
