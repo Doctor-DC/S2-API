@@ -26,6 +26,7 @@ django项目下配置文件
     cd venv/  
         source bin/activate  
     cd django项目
+    (pip install -r requirements.txt)
 
 
 退出虚拟环境：
