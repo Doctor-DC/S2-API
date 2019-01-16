@@ -30,9 +30,11 @@ django项目下配置文件
 
 
 进入虚拟环境
-
-    cd venv/  
-        source bin/activate  
+    
+    python -m venv venv3
+    cd venv3/  
+        source bin/activate 
+        Scripts/activate.bat  #windows
     cd django项目
     (pip install -r requirements.txt)
 
