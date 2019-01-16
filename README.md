@@ -8,6 +8,9 @@
 进行静态文件移植
         
         python manage.py collectstatic
+  
+获取依赖  
+        pip freeze > requirements.txt
 
 django项目下配置文件
 
@@ -19,6 +22,11 @@ django项目下配置文件
     processes = 4   
     #指定静态文件
     static-map=/static=/root/python/work/venv/s2/static/ 
+    stats=/root/python/work/venv/s2/uwsgi/uwsgi.status           
+
+    pidfile=/root/python/work/venv/s2/uwsgi/uwsgi.pid
+
+    daemonize =/root/python/work/venv/s2/uwsgi/web_uwsgi.log 
 
 
 进入虚拟环境
